@@ -23,10 +23,10 @@ class BookList extends Component {
       ...prevState.books,
       {
           id: this.nextID(),
-          reut: txt1,
-          shiran: txt2,
-          nitzan:txt4,
-          matan:txt3
+          name: txt1,
+          author: txt2,
+          nationality:txt4,
+          rank:txt3
           
       }]
     }))
@@ -39,7 +39,7 @@ class BookList extends Component {
   update(newBook, i) {
     this.setState(() => ({
       books: this.state.books.map(
-        (book) => (book.id !== i) ? book : {...book, reut: newBook}
+        (book) => (book.id !== i) ? book : {...book, name: newBook}
       )
     }))
   }    
@@ -66,10 +66,10 @@ class BookList extends Component {
       <div key={'container'+i}className="card" style={{width: 18 + 'rem'}}>
         <div className="card-body">
           <Idea key={'book'+i} index={i} onChange={this.update}>
-            <h5 className="card-title">{book.reut}</h5>
-            <p className="card-text">{book.shiran}</p>
-            <p className="card-text">{book.nitzan}</p>
-            <p className="card-text">{book.matan}</p>
+            <h5 className="card-title">{book.name}</h5>
+            <p className="card-text">{book.author}</p>
+            <p className="card-text">{book.nationality}</p>
+            <p className="card-text">{book.rank}</p>
           </Idea>
         </div>
       </div>
