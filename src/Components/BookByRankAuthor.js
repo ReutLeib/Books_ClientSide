@@ -8,7 +8,7 @@ class BookByRankAuthor extends Component {
     render() {
         return (
             <div>
-                <form action="https://books-ranking.herokuapp.com/bookRankAuthor/" method="POST">
+                <form action="https://books-ranking.herokuapp.com/bookRankAuthor/" method="POST" onSubmit={this.handleSubmit}>
                     <label>
                         Rank:
                         <input type="text" name="rank" />
@@ -19,6 +19,8 @@ class BookByRankAuthor extends Component {
                       </label>
                     <input type="submit" value="Send" />
                 </form>
+                <div id="response">
+                </div>
             </div>
         )
     }

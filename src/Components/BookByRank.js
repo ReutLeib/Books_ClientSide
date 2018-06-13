@@ -29,19 +29,6 @@ class BookByRank extends Component {
     }))
   }
 
-  // eachRank (book,i) {         
-  //     <div key={'container'+i}className="card" style={{width: 18 + 'rem'}}>
-  //       <div className="card-body">
-  //         <Idea key={'book'+i} index={i} onChange={this.update}>
-  //           <h5 className="card-title">{book.name}</h5>
-  //           <p className="card-text">{book.author}</p>
-  //           <p className="card-text">{book.nationality}</p>
-  //           <p className="card-text">{book.rank}</p>
-  //         </Idea>
-  //       </div>
-  //     </div>
-  // }
-
   handleRankChange(event){
     this.setState({newRank: event.target.value})
   }
@@ -60,8 +47,6 @@ class BookByRank extends Component {
           });
             const content = await rawResponse.json();
             ReactDOM.render(<BookRankList books={content} />, document.getElementById("response"))
-            // content.map(this.eachRank)
-            console.log(content);
             
         })();
     }
@@ -79,7 +64,6 @@ class BookByRank extends Component {
                   </label>
                   <input type="submit" value="Send" />
                 </form>
-
                 <div id="response">
                 </div>
             </div>
