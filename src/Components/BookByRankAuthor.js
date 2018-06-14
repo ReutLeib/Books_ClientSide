@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom'
 class BookByRankAuthor extends Component {
     constructor(props) {
         super(props)
-        this.state = {}
+        this.state = {newRank:0, newAuthor:0};
 
         this.handleSubmit=this.handleSubmit.bind(this);
         this.handleRankChange=this.handleRankChange.bind(this);

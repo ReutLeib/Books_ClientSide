@@ -1,12 +1,12 @@
 
 import React from 'react';
 
-const BookRankList = ({ books, i }) => (
+const BookRankList = ({ books, index }) => (
   <div>
    { books && books.map( (item, index) => 
-       <div key={'container'+i}className="card" style={{width: 18 + 'rem'}}>
+       <div key={'container'+index}className="card" style={{width: 18 + 'rem'}}>
          <div className="card-body">
-          <div key={'book'+i} index={i} >
+          <div key={'book'+index} index={index} >
               <h5 className="card-title">{item.name}</h5>
               <p className="card-text">{item.author.nationality}</p>
               <p className="card-text">{item.author.age}</p>

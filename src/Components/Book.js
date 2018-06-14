@@ -22,7 +22,8 @@ class Book extends Component {
     });
   }
   delete() {
-    alert('"deleted" (; ')
+    // alert('"deleted" (; ')
+    
   }
   save(e) {
     e.preventDefault();
