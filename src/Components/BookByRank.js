@@ -8,7 +8,7 @@ import ReactDOM from 'react-dom'
 class BookByRank extends Component {
     constructor(props) {
         super(props)
-        this.state = {newRank:0}
+        this.state = {}
 
         this.handleSubmit=this.handleSubmit.bind(this);
         this.handleRankChange=this.handleRankChange.bind(this);
