@@ -7,14 +7,15 @@ class BookList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      books: [
-      ]
+      books: []
     }
     this.eachBook   = this.eachBook.bind(this);
     this.update     = this.update.bind(this);
     this.delete     = this.delete.bind(this);
-    this.add        = this.add.bind(this)
-    this.nextID     = this.nextID.bind(this)
+    this.add        = this.add.bind(this);
+    this.nextID     = this.nextID.bind(this);
+    this.addBook    = this.addBook.bind(this);
+
   }
 
   add(txt1,txt2,txt3,txt4) {
@@ -30,6 +31,7 @@ class BookList extends Component {
           
       }]
     }))
+
   }
   nextID() {
       this.uniqueId = this.uniqueId || 0
@@ -76,11 +78,27 @@ class BookList extends Component {
       )
   }
 
+  addBook(){
+    const rand = Math.floor(Math.random() * 100) + 1 ;
+
+    this.setState(prevState => ({
+      books: [
+      ...prevState.books,{
+        id:this.nextID(),
+        name: "The story about Reut Leib",
+        author: "pupa",
+        nationality:rand,
+        rank: 9
+      }]
+    }))
+  }
+
+
   render() {
       return (
         <div className="bookList">
           {this.state.books.map(this.eachBook)}
-          <button id="add" className="btn btn-primary" style={{marginTop:7+'px'}}>
+          <button id="add" onClick={this.addBook} className="btn btn-primary" style={{marginTop:7+'px'}}>
              <MdAdd/></button>
         </div>
       )

@@ -1,6 +1,7 @@
 
 import React from 'react';
 
+// add the card of book
 const BookRankList = ({ books, index }) => (
   <div>
    { books && books.map( (item, index) => 

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Idea from './Book'
 import BookRankList from './BookRankList'
 import MdAdd from 'react-icons/lib/md/add'
 import ReactDOM from 'react-dom'
@@ -47,7 +46,6 @@ class BookByRank extends Component {
           });
             const content = await rawResponse.json();
             ReactDOM.render(<BookRankList books={content} />, document.getElementById("response"))
-            
         })();
     }
 

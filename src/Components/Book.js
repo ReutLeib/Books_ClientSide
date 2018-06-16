@@ -21,10 +21,13 @@ class Book extends Component {
       editing:true
     });
   }
-  delete() {
-    // alert('"deleted" (; ')
-    
+  delete(e) {
+    alert('"deleted" (; ')
+    // Jest for f12 console
+    e.preventDefault();
+    const id = this.props.index;
   }
+
   save(e) {
     e.preventDefault();
     this.props.onChange(this.newBook.value,this.props.index);

@@ -13,14 +13,14 @@ class BookByRankAuthor extends Component {
     }
 
      handleRankChange(event){
-        console.log(`newRank1: ${event.target.value}`)
         this.setState({newRank: event.target.value})
+        console.log(`newRank: ${event.target.value}`)
      
      }
 
      handleAuthorRankChange(event){
         this.setState({newAuthor: event.target.value})
-        console.log(`newRank2: ${event.target.value}`)
+        console.log(`newAuthorRank: ${event.target.value}`)
      
      }
 
