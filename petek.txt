@@ -1,8 +1,0 @@
-BookList:
-  ideas -> books
-  ideaList -> bookList
-  eachIdea -> eachBook
-  idea -> book
-
-  Book:
-    newIdea -> newBook

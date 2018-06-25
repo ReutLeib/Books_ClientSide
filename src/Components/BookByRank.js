@@ -57,6 +57,7 @@ class BookByRank extends Component {
                 <form action="https://books-ranking.herokuapp.com/bookByRank/" method="POST" onSubmit={this.handleSubmit}>
                   <label>
                     <p> book rank parameter is number must be under, equal 10</p>
+                    (Enter 8 \ 9) <br></br>
                     Rank:
                     <input onChange={this.handleRankChange} value={this.state.newRank} type="text" name="rank" />                  
                   </label>

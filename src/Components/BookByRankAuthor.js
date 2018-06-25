@@ -49,6 +49,7 @@ class BookByRankAuthor extends Component {
             <div>
                 <form action="https://books-ranking.herokuapp.com/bookRankAuthor/" method="POST" onSubmit={this.handleSubmit}>
                     <label>
+                    (Enter Rank: 9, Author: 9.5)<br></br>
                         Rank:
                         <input onChange={this.handleRankChange} value={this.state.newRank} type="text" name="rank" />
                       </label>

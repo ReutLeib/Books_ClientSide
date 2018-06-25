@@ -57,8 +57,9 @@ class BookList extends Component {
     }).then((data) => {        
       var self=this;        
       data.map((data) => {            
-        console.log('books')            
         self.add(data.name, data.author.nationality, data.author.age, data.rank);        
+    console.log(data);
+      
       })      
     })  
   }
