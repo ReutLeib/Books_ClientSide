@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import Idea from './Book'
+import Book from './Book'
 import MdAdd from 'react-icons/lib/md/add'
 
 
@@ -68,12 +68,12 @@ class BookList extends Component {
     return (          
       <div key={'container'+i}className="card" style={{width: 18 + 'rem'}}>
         <div className="card-body">
-          <Idea key={'book'+i} index={i} onChange={this.update}>
+          <Book key={'book'+i} index={i} onChange={this.update}>
             <h5 className="card-title">{book.name}</h5>
             <p className="card-text">{book.author}</p>
             <p className="card-text">{book.nationality}</p>
             <p className="card-text">{book.rank}</p>
-          </Idea>
+          </Book>
         </div>
       </div>
       )

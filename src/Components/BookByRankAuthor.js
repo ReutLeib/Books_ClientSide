@@ -28,7 +28,6 @@ class BookByRankAuthor extends Component {
         event.preventDefault();
         let newRank = this.state.newRank;
         let newAuthor = this.state.newAuthor;
-        console.log("BOBO:" + newRank,newAuthor);
         (async () => {
           const rawResponse = await fetch('https://books-ranking.herokuapp.com/bookRankAuthor/', {
             method: 'POST',

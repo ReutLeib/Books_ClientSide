@@ -18,10 +18,10 @@ class Header extends Component {
                 <NavLink exact to="/" activeStyle={this.active}>
                 Home
                 </NavLink>
-                <NavLink to="/BookByRank" activeStyle={this.active}>
+                <NavLink to="/2017-2018/dcs/dev_22/client_app/BookByRank" activeStyle={this.active}>
                 Book By Rank
                 </NavLink> 
-                <NavLink to="/BookByRankAuthor" activeStyle={this.active}>
+                <NavLink to="/2017-2018/dcs/dev_22/client_app/BookByRankAuthor" activeStyle={this.active}>
                 Book By Rank <b>&</b> Author_Rank
                 </NavLink>
             </div>

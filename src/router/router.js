@@ -9,9 +9,9 @@ const ReactRouter =()=>{
     return (
         <React.Fragment>
             <Header />
-            <Route exact path="/" component={BookList} />
-            <Route  path="/BookByRank" component={BookByRank} />
-            <Route  path="/BookByRankAuthor" component={BookByRankAuthor} />
+            <Route exact path="/2017-2018/dcs/dev_22/client_app/" component={BookList} />
+            <Route  path="/2017-2018/dcs/dev_22/client_app/BookByRank" component={BookByRank} />
+            <Route  path="/2017-2018/dcs/dev_22/client_app/BookByRankAuthor" component={BookByRankAuthor} />
         </React.Fragment>
     );}
 

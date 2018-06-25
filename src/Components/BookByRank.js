@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import BookRankList from './BookRankList'
-import MdAdd from 'react-icons/lib/md/add'
 import ReactDOM from 'react-dom'
 
 
